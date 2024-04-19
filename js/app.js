@@ -1,19 +1,9 @@
-let botao = document.getElementsByTagName('a');
+function alterarStatus(id){
+    let gameEscolido = document.getElementById(`game-${id}`);
+    let imgGame = gameEscolido.querySelector('.dashboard__item__img');
+    let nomeGame = gameEscolido.querySelector('.dashboard__item__name');
 
-function alterarStatus(numero) {
-
-    alterarStatus('1');
-
-    if (botao.classList.contains('dashboard__item__img')) {
-        botao.classList.remove('dashboard__item__img');
-        botao.classList.add('dashboard__item__img--rented');
-
-        console.log('passou aqui');
-
-    } else {
-
-    }
-
+    alert(nomeGame.textContent);
 
 
 
