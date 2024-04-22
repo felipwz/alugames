@@ -8,9 +8,15 @@ function alterarStatus(id) {
 
     if (botao.classList.contains('dashboard__item__button')) {
         botao.classList.add('dashboard__item__button--return');
+        imgGame.classList.add('dashboard__item__img--rented');
+
+
     } else if (botao.classList.contains('dashboard__item__button--return')) {
         botao.classList.remove('dashboard__item__button--return');
+        imgGame.classList.remove('dashboard__item__img--rented')
+
     }
 
 
 }
+
