@@ -6,10 +6,18 @@ function alterarStatus(id) {
 
 
 
-    if (botao.classList.contains('dashboard__item__button')) {
-        botao.classList.add('dashboard__item__button--return');
-    } else if (botao.classList.contains('dashboard__item__button--return')) {
+    if (imgGame.classList.contains('dashboard__item__img--rented')) {
+        imgGame.classList.remove('dashboard__item__img--rented');
         botao.classList.remove('dashboard__item__button--return');
+        botao.textContent = 'Alugar';
+        
+
+    } else {
+        imgGame.classList.add('dashboard__item__img--rented');
+        botao.classList.add('dashboard__item__button--return');
+        botao.textContent = 'Devolver';
+        
+        
     }
 
 
