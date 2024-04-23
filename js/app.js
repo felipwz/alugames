@@ -1,10 +1,10 @@
-function confirmacaoDeDevolucao(imgGame, botao) {
+function confirmacaoDeDevolucao(imagem, button) {
     var resposta = confirm("Você deseja devolver esse jogo?");
 
     if (resposta) {
-        imgGame.classList.remove('dashboard__item__img--rented');
-        botao.classList.remove('dashboard__item__button--return');
-        botao.textContent = 'Alugar';
+        imagem.classList.remove('dashboard__item__img--rented') ;
+        button.classList.remove('dashboard__item__button--return');
+        button.textContent = 'Alugar';
 
     } else {
 
@@ -34,4 +34,3 @@ function alterarStatus(id) {
 
 
 }
-
