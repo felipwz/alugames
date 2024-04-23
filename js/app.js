@@ -1,3 +1,4 @@
+// Finalizado
 function alterarStatus(id) {
     let gameEscolido = document.getElementById(`game-${id}`);
     let imgGame = gameEscolido.querySelector('.dashboard__item__img');
