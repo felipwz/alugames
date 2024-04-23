@@ -1,6 +1,5 @@
 function confirmacaoDeDevolucao(imgGame, botao) {
-    alert("Você deseja devolver esse jogo?");
-    var resposta = confirm("Clique em OK para 'Sim' ou em Cancelar para 'Não'.");
+    var resposta = confirm("Você deseja devolver esse jogo?");
 
     if (resposta) {
         imgGame.classList.remove('dashboard__item__img--rented');
